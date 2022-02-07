@@ -8,4 +8,4 @@ import Counters from './components/counters';
 
 
 ReactDOM.render(<Counters />, document.getElementById("root"));
-registerServiceWorker();
+// registerServiceWorker();
