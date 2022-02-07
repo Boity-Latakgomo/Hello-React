@@ -25,7 +25,12 @@ import React, { Component } from 'react';
              className="btn btn-secondary btn-sm">
                  Increment Counter
                  </button>
-                 <button className="btn btn-danger btn-sm m-3">Delete</button>
+                 <button
+                  onClick={() => this.props.onDelete(this.props.id)}
+                   className="btn btn-danger btn-sm m-3"
+                   >
+                       Delete
+                       </button>
              
         </div>
         );
