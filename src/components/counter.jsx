@@ -3,7 +3,7 @@ import React, { Component } from 'react';
  class Counter extends Component {
 
     state = {
-        count: 0
+        count: this.props.value
        
     };
     
@@ -15,8 +15,8 @@ import React, { Component } from 'react';
    
     
     render() { 
-        
-        
+    
+
         const product = {id:1};
         return(
         <div>
