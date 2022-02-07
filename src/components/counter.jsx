@@ -16,10 +16,11 @@ import React, { Component } from 'react';
     
     render() { 
     
-
+     console.log(this.props);
         const product = {id:1};
         return(
         <div>
+            {this.props.children}
              <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
              <button 
              onClick={ () => this.handleIncrement(product) }
